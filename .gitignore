@@ -60,5 +60,3 @@ replay_pid*
 *.iml
 out
 gen
-.gradle
-build
