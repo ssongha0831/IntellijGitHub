@@ -1,5 +1,5 @@
+// 송하연
 package JavaChall.JavaStudyWeekly02;
-
 import java.util.Scanner;
 
 public class JavaStuWee02 {
@@ -14,7 +14,7 @@ public class JavaStuWee02 {
         System.out.print("학년 : ");
         int grade = scanner.nextInt();
 
-        scanner.nextLine(); // 버퍼 비우기
+        scanner.nextLine();
 
         System.out.print("반 : ");
         String className = scanner.nextLine();

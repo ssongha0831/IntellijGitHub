@@ -22,7 +22,7 @@ class BankAccount {
 
     public void withdraw(int amount) {
         if (amount <= 0 ) {
-            throw new IllformedLocaleException("출금액은 0보다 커야 합니다.");
+            throw new IllegalArgumentException("출금액은 0보다 커야 합니다.");
         }
 
         if (balance < amount) {

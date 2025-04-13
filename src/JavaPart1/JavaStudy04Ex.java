@@ -1,12 +1,13 @@
 package JavaPart1;
+import JavaChall.JavaStudyWeekly02.MemberSer;
+import JavaChall.JavaStudyWeekly02.MemberServiceImpl;
 
-//import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JavaStudy04Ex {
     public static void main(String[] args) {
-
-        MemberSer service = new MemberServiceImpl();
+/*
+        //MemberSer service = new MemberServiceImpl();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -33,7 +34,8 @@ public class JavaStudy04Ex {
                 default:
                     System.out.println("잘못입력하셨습니다.");
             }
-        }
+            System.out.println();
+        }*/
     }
 }
 

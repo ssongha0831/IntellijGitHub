@@ -1,8 +1,8 @@
+// 송하연
 package JavaChall.JavaStudyWeekly02;
-
 import JavaBasic.Ch07.BufferedFileCopy;
-
 import java.io.*;
+
 
 public class JavaStuWee03 {
     private static final int BUFFER_SIZE = 8192;
