@@ -1,7 +1,9 @@
 // 송하연
 /*
 GradeCard
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/GradeCard.java
 StudentScoreList
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/StudentScoreList.java
  */
 package JavaChall.JavaStudyWeekly02;
 import java.util.ArrayList;

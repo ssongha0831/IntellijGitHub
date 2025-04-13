@@ -1,8 +1,11 @@
 // 송하연
 /*
 Member
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/Member.java
 MemberServiceImpl
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/MemberServiceImpl.java
 MemberSer
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/MemberSer.java
 */
 
 package JavaChall.JavaStudyWeekly02;

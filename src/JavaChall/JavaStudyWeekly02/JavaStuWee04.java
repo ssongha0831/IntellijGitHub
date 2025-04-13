@@ -1,8 +1,11 @@
 // 송하연
 /*
 PhoneNumSer
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/PhoneNumSer.java
 PhoneSer
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/PhoneSer.java
 PhoneServiceImpl
+https://github.com/ssongha0831/IntellijGitHub/blob/master/src/JavaChall/JavaStudyWeekly02/PhoneServiceImpl.java
 */
 package JavaChall.JavaStudyWeekly02;
 import java.util.Scanner;
