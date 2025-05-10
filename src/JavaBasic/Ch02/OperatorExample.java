@@ -11,7 +11,7 @@ public class OperatorExample {
         int c = 10 * 50;
         System.out.println("c = " + c);
         int d = 10 / 5;
-        System.out.println("c = " + d);
+        System.out.println("d = " + d);
         int e = 10 % 3; // 나머지
         System.out.println("e = " + e);
 
@@ -44,7 +44,6 @@ public class OperatorExample {
         boolean 춥다 = true;
         boolean result = 비가온다 && 춥다;
         System.out.println("result : " + result);
-
 
 
         // 삼항연산자

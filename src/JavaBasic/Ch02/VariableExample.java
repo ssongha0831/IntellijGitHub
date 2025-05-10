@@ -14,7 +14,7 @@ public class VariableExample {
 
         // 2. 변수값 재정의
         number = 20;
-        System.out.println(number);
+        System.out.println("number = " + number);
 
         // 3. 상수 선언과 초기화
         //MAX_VALUE = 200; // 컴파일에러 : 상수는 값 재정의 불가
@@ -23,7 +23,7 @@ public class VariableExample {
         //int 1number; // 숫자로 시작 불가
         //int class; // 예약어 사용 불가
         //int my score; // 공백 불가
-        //int #number; // 특수분자 불가 ( $ , _ 허용 )
+        //int #number; // 특수문자 불가 ( $ , _ 허용 )
 
         // 5. 올바른 변수명 예시
         int age = 25;

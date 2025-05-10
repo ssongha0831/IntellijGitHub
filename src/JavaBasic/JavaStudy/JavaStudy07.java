@@ -9,7 +9,10 @@ public class JavaStudy07 {
                 {"다녀왔다", "갈 예정이다"}
         };
 
-        System.out.println("문장 1: " + words[0][0] + " " + words[1][0] + " " + words[2][0] + " " + words[3][0]);
-        System.out.println("문장 2: " + words[0][1] + " " + words[1][1] + " " + words[2][1] + " " + words[3][1]);
+        String sentens1 = words[0][0] + " " + words[1][0] + " " + words[2][0] + " " + words[3][0];
+        System.out.println("문장 1 : " + sentens1);
+
+        String sentens2 = words[0][1] + " " + words[1][1] + " " + words[2][1] + " " + words[3][1];
+        System.out.println("문장 2 : " + sentens2);
     }
 }

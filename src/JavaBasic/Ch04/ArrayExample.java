@@ -27,7 +27,7 @@ public class ArrayExample {
         int[] ages = new int[3];
 
         // 선언과 동시에 초기화
-        int[] points = { 95, 88, 76,91,85};
+        int[] points = { 95, 88, 76, 91, 85};
 
         // 3. 배열의 사용
         int[] numbers = new int[5];
@@ -58,7 +58,7 @@ public class ArrayExample {
 
         // 주의 사항
         int[] arr = new int[1];
-        //arr[2] = 3; //ArrayIndexOutOfBoundsException => 오류 ( 배열의 인덱스 범위를 벗어나서 값을 지정하면 나오는 오류
+        //arr[2] = 3; //ArrayIndexOutOfBoundsException => 오류 ( 배열의 인덱스 범위를 벗어나서 값을 지정하면 나오는 오류 )
 
         int[] nullArr;
         //nullArr[0] = 1; // 배열을 초기화 하지 않고 값을 지정하면 오류가 나옴 ( new int[1]; => 초기화 )
@@ -84,19 +84,20 @@ public class ArrayExample {
 
         // 문제 정답
         // 1. 로또 번호를 저장할 배열 생성 ( 6개의 숫자 )
-        int[] lotto = new int[6];
+        int[] lotto = new int[6]; // 6으로 초기화
         
         // 2. 로또 번호 생성 ( 1~ 45 )
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++) { //i가 6까지인 거는 인덱스 번호로 하기 때문에??
             // 1 ~ 45 사이의 랜덤한 숫자 생성
             int num = (int)(Math.random() * 45 ) + 1; // Math.random()에 45를 곱하고 1을 더하면 정수가 나옴, (int)는 형변환
+                                                      // 1을 더하는 이유는 0부터 나올 수 있기 때문에
 
             // 중복 검사
             boolean isDuplicated = false;
 
             // 이미 생성된 번호와 비교
             for (int j = 0; j < i; j++) {
-                if (lotto[j] == num) {
+                if (lotto[j] == num) { // lotto 값이 num과 중복인지 비교
                     isDuplicated = true;
                     i--; // 중복이면 이번 회차 다시 실행
                     break;
@@ -105,21 +106,14 @@ public class ArrayExample {
 
             // 중복이 아닐 경우에만 배열에 저장
             if (!isDuplicated) {
-                lotto[i] = num;
+                lotto[i] = num; // 중복이 아닐 경우에만 저장
             }
         }
 
         // 생성된 로또 번호를 출력
         System.out.print("로또 번호 : ");
-        for (int i = 0; i < lotto.length; i++) {
+        for (int i = 0; i < lotto.length; i++) { // i는 배열의 인덱스
             System.out.print(lotto[i] + " ");
         }
-
-
-
-
-
-
-
     }
 }

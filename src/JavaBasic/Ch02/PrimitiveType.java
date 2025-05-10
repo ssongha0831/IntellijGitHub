@@ -70,9 +70,5 @@ public class PrimitiveType {
         System.out.println("오토 언박싱 : " + c);
 
         // 레퍼런스 타입과 기본형의 가장 큰 차이는 레퍼런스 타입은 null 값을 허용한다는 것
-
-
-
-
     }
 }

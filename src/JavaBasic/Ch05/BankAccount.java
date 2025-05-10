@@ -1,9 +1,10 @@
 package JavaBasic.Ch05;
 
 // public을 abstract -> 추상클래스로 변경
+// 추상클래스
 abstract class BankAccount {
     
-    // 문제 : 입금, 출금, 잔액조회 기능을 가지고 잇는 은행 계좌 믈래스 만들어보기
+    // 문제 : 입금, 출금, 잔액조회 기능을 가지고 있는 은행 계좌 클래스 만들어보기
     // 필드
     private String accountNumber; // 계좌번호
     private String owner;         // 예금주
@@ -54,7 +55,7 @@ abstract class BankAccount {
 
     public static void main(String[] args){
         // 계좌 생성
-        NormalAccount normal= new NormalAccount("1111-2222", "홍길동");
+        NormalAccount normal = new NormalAccount("1111-2222", "홍길동");
         // 마이너스 통장 개설 ( 한도 10만원 )
         MinusAccount minus = new MinusAccount( "3333-4444", "김철수", 100000);
         //BankAccount account1 = new BankAccount( "3333-4444", "김철수");
@@ -115,7 +116,7 @@ abstract class BankAccount {
 
 }
 
-// 추상클래스
+
 // 일반 계좌
 class NormalAccount extends BankAccount {
     public NormalAccount(String accountNumber, String owner) {

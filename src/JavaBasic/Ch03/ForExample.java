@@ -29,7 +29,7 @@ public class ForExample {
         } // for문을 while문으로 사용가능
 
 
-        // 2, 카운트 다운
+        // 2. 카운트 다운
         int count = 5;
 
         while (count > 0){
@@ -73,7 +73,6 @@ public class ForExample {
         */
 
         // 4. 구구단 작성
-        // 2단부터 9단까지 반복
         for ( int dan = 2; dan <= 9; dan++){ // 2단부터 9단까지 반복
             // 단수 표시
             System.out.println("\n" + dan + "단");

@@ -7,12 +7,13 @@ interface DiscountPolicy {
     int calculateDiscount(int price);
 }
 
-// 정률 할인 정책 구현 ( 18% 할인 )
+// 정률 할인 정책 구현 ( 10% 할인 )
 class PercentDiscountPolicy implements DiscountPolicy {
 
     @Override
     public int calculateDiscount(int price) {
         return (int)(price * 0.1 ); // 10% 할인
+
     }
 }
 
@@ -22,6 +23,7 @@ class FixedDiscountPolicy implements DiscountPolicy {
     @Override
     public int calculateDiscount(int price) {
         return 1000; // 1000원 할인
+
     }
 }
 
@@ -65,7 +67,7 @@ public class DiscountExample {
         Product product2 = new Product("마우스", 5000, fixedDiscount); // 1000원 할인 적용
 
         // 상품 정보 출력
-        System.out.println("=== 정품 할인 적용 ===");
+        System.out.println("=== 정률 할인 적용 ===");
         product1.printInfo();
         System.out.println();
 

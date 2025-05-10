@@ -17,7 +17,7 @@ class Member {
         this.point = 0;
     }
 
-    // 포인트 적립 ( 구매굼액의 1% )
+    // 포인트 적립 ( 구매금액의 1% )
     public void calcPrice(int price) {
         int point = (int)(price * 0.01);
         this.point += point;
@@ -80,7 +80,7 @@ public class MemberExample {
 
         // VIP 회원 생성
         VIPMember vip = new VIPMember("김철수", "kim", "박상담");
-        vip.calcPrice(10000);    // 500포인트 적립
+        vip.calcPrice(50000);    // 500포인트 적립
         vip.showMemberInfo();
     }
 }

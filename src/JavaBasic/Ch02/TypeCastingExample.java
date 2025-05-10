@@ -44,24 +44,24 @@ public class TypeCastingExample {
         char ch = 'A';
         int chNUm = (int) ch;
 
-        // 결과
+        // 결과 출력
         System.out.println();
         System.out.println("4. 문자 -> 정수");
-        System.out.println("ch = " + ch);
-        System.out.println("chNUm = " + chNUm); // A에 대한 아스키 코드에 대한 숫자
+        System.out.println("ch = " + ch); // A
+        System.out.println("chNUm = " + chNUm); // A에 대한 아스키 코드에 대한 숫자 65 출력
 
         int num = 66;
         char character = (char) num; // '66'으로 출력될까?
         System.out.println();
         System.out.println("5. 정수 -> 문자");
         System.out.println("num = " + num);
-        System.out.println("character = " + character);
+        System.out.println("character = " + character); // B
 
         /* 이렇게 작성했으면 더 편하게 작성할 수 있음 -> 내가 푼 방법 수정
         int number2 = 66;
         char numberChar = (char)(number2);
         System.out.println();
-        System.out.println("4. 정수 -> 문자 ");
+        System.out.println("5. 정수 -> 문자 ");
         System.out.println("number2 = " + number2);
         System.out.println("numberChar = " + numberChar);
         *
@@ -90,7 +90,7 @@ public class TypeCastingExample {
         System.out.println("int 값 : " + intPi);
 
         int a = 333;
-        byte b = ( byte) a;
+        byte b = (byte) a;
         System.out.println("int = " + a);
         System.out.println("b = " + b);
 
