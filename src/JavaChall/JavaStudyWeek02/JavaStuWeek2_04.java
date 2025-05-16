@@ -109,8 +109,6 @@ class ContactManagerImpl extends ContactManager {
         }
         System.out.println();
     }
-
-    // 각 기능 (add, remove, search, list) 구현
 }
 public class JavaStuWeek2_04 {
     public static void main(String[] args) {
