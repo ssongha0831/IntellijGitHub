@@ -1,15 +1,16 @@
-// 송하연
-package JavaChall.JavaStudyWeekly02;
+/*
+송하연
+ */
+package JavaChall.JavaStudyWeek02;
 
-public class JavaStuWee01 extends RuntimeException  {
-    public JavaStuWee01(String message){
-       super(message);
+public class JavaStuWeek2_01Exception extends RuntimeException {
+    public JavaStuWeek2_01Exception(String message){
+        super(message);
     }
 }
-
 class BankAccount {
     private String accountNumber;
-    private  int balance;
+    private int balance;
 
     public BankAccount(String accountNumber, int balance) {
         this.accountNumber = accountNumber;
@@ -22,7 +23,7 @@ class BankAccount {
         }
 
         if (balance < amount) {
-            throw new JavaStuWee01 ("잔액이 부족합니다. 현재 잔액 : " + balance + "원");
+            throw new JavaStuWeek2_01Exception("잔액이 부족합니다. 현재 잔액 : " + balance + "원");
         }
 
         balance -= amount;
@@ -30,10 +31,8 @@ class BankAccount {
         System.out.println("현재 잔액 : " + balance + "원");
     }
 
-
-
-    public static void main(String[] args){
-        //BankAccount bankAccount = new BankAccount("1234-456", 100);
-        //bankAccount.withdraw(200);
+    public static void main(String[] args) {
+        BankAccount bankAccount = new BankAccount("1234-456", 100);
+        bankAccount.withdraw(200);
     }
 }

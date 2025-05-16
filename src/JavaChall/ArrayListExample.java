@@ -13,7 +13,7 @@ public class ArrayListExample {
         System.out.println("추가 : " + numbers);
 
         numbers.add(1,15);
-        System.out.println("중간 데어터 확인: " + numbers);
+        System.out.println("중간 데이터 확인: " + numbers);
 
         numbers.remove(Integer.valueOf(20));
         System.out.println("값 20 삭제: " + numbers);

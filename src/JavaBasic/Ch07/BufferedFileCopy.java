@@ -24,11 +24,11 @@ public class BufferedFileCopy {
         validatePaths(source, target);
 
         try ( BufferedInputStream bis =
-                      new BufferedInputStream(new FileInputStream(source));
+                      new BufferedInputStream(new FileInputStream(source), BUFFER_SIZE);
               BufferedOutputStream bos =
-                      new BufferedOutputStream(new FileOutputStream(target))) {
+                      new BufferedOutputStream(new FileOutputStream(target), BUFFER_SIZE)) {
 
-              byte[] buffer = new byte[BUFFER_SIZE];
+              byte[] buffer = new byte[BUFFER_SIZE]; 
               int bytesRead;
 
               while ((bytesRead = bis.read(buffer)) != -1) {

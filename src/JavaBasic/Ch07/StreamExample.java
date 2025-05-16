@@ -9,10 +9,10 @@ public class StreamExample {
         /*
         // 1. FileInputStream으로 byte 읽고, try-with-resource 구문 사용
         try(FileInputStream fis = new FileInputStream("test.txt")) {
-            int date;
+            int data;
             // 한 바이트씩 읽기
-            while ((date = fis.read()) != -1) {
-                System.out.print((char) date);
+            while ((data = fis.read()) != -1) {
+                System.out.print((char) data);
             }
 
         } catch (IOException e) {
@@ -51,14 +51,14 @@ public class StreamExample {
         */
 
         // 5. BufferedReader로 한 줄씩 읽기
-        try (BufferedReader br = new BufferedReader(new FileReader(("test.txt")))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("test.txt"))) {
             String line;
             // 한 줄씩 읽기
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
 
         // 6. BufferedWriter로 쓰기
@@ -69,7 +69,7 @@ public class StreamExample {
             bw.newLine();
             bw.write("세 번째 줄");;
         } catch (IOException e) {
-
+            e.printStackTrace();
         }
 
     }
