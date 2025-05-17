@@ -63,8 +63,9 @@ public class JavaStuWeek2_06 {
             } else if (command.equals("list")) {
                 System.out.println("학생 목록 : ");
                 for (Map.Entry<String, List<Integer>> entry : grade.entrySet()) {
-                    System.out.println(entry.getKey() + " - 성적 : " + entry.getValue() + "\n");
+                    System.out.println(entry.getKey() + " - 성적 : " + entry.getValue());
                 }
+                System.out.println();
 
             } else if (command.equals("exit")) {
                 System.out.println("프로그램 종료.");
