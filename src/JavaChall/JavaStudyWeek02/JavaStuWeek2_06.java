@@ -6,7 +6,7 @@ import java.util.*;
 
 public class JavaStuWeek2_06 {
     public static void main(String[] args) {
-        Map<String, List<Integer>> grade = new HashMap<>();
+        Map<String, List<Integer>> grade = new HashMap<>(); //
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("성적 관리 시스템 (add, remove, grade, average, list, exit)");
@@ -33,7 +33,6 @@ public class JavaStuWeek2_06 {
                     System.out.println("해당 학생이 없습니다.\n");
                 }
 
-
             } else if (command.equals("grade")) {
                 System.out.print("성적 추가할 학생 이름 : ");
                 String nameAddGrade = scanner.nextLine();
@@ -58,7 +57,6 @@ public class JavaStuWeek2_06 {
                 } else {
                     System.out.printf("%s의 학생은 찾을 수 없습니다.\n", avgName);
                 }
-
 
             } else if (command.equals("list")) {
                 System.out.println("학생 목록 : ");
