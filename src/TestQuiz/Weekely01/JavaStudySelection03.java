@@ -24,7 +24,12 @@ public class JavaStudySelection03 {
         System.out.println("달력의 월을 입력해 주세요.(mm):");
         int month = scanner.nextInt();
 
-        System.out.println("[" + year + "년 " + month + "월]");
+        /*
+        if () {
+            System.out.println("[" + year + "년 " + month + "월]");
+        }
+
+         */
 
 
     }

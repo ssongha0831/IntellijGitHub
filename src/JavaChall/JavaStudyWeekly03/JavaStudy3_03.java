@@ -1,4 +1,6 @@
-// 36기 송하연
+/*
+송하연
+ */
 package JavaChall.JavaStudyWeekly03;
 
 class ThreadDownloadFile implements Runnable {

@@ -1,4 +1,6 @@
-// 36기 송하연
+/*
+송하연
+ */
 package JavaChall.JavaStudyWeekly03;
 
 public class JavaStudy3_05 {
@@ -11,7 +13,6 @@ public class JavaStudy3_05 {
     }
 
     public static void main(String[] args) {
-        System.out.println("> Task : AuthenticationSystem.main()");
 
         setThreadLocal();
 

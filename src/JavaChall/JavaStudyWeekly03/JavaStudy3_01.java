@@ -1,4 +1,6 @@
-// 36기 송하연
+/*
+송하연
+ */
 package JavaChall.JavaStudyWeekly03;
 import java.util.Scanner;
 
@@ -17,20 +19,21 @@ public class JavaStudy3_01 {
                 int number = Integer.parseInt(input);
 
                 if (number > account.getAmount()) {
-                    throw new MinusException("잔액 부족!\n");
+                    throw new MinusException("잔액 부족!");
                 } else if (number == 0) {
                     throw new ZeroException("금액을 0이상으로 입력해주세요.\n");
                 }
                 int value = account.getAmount() - number;
 
                 System.out.println("출금 완료! 남은 잔액은 " + value);
-                System.out.println("거래 금액이 저장되었습니다.");
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("숫자가 아닙니다. 올바른 숫자를 입력하세요.");
                 System.out.println();
             } catch (MinusException | ZeroException e) {
                 System.out.println(e.getMessage());
+            } finally {
+                System.out.println("거래 기록이 저장되었습니다.\n");
             }
         }
         scanner.close();

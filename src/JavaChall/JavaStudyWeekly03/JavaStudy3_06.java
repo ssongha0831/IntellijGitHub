@@ -1,21 +1,25 @@
+/*
+송하연
+ */
 package JavaChall.JavaStudyWeekly03;
-
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.concurrent.*;
 
 public class JavaStudy3_06 {
     public static void main(String[] args) {
-        /*
-        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-        Process log;
-        executorService.scheduleAtFixedRate(() -> log.info("hi" + Thread.currentThread().getName()), 1, 5, TimeUnit.SECONDS);
-        try {
-            Thread.sleep(10000); // sleep for 10 seconds to allow the task to run
-        } catch (InterruptedException e) {
-            log.error("Interrupted while sleeping", e);
-        }
-        executorService.shutdown();
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-         */
+        Runnable emilTask = new Runnable() {
+            int count = 1;
+            @Override
+            public void run() {
+                String now = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSS"));
+                System.out.println("[ " + now + " ]  이메일 발송 : " + count + " ( " + Thread.currentThread().getName() + ")" );
+            }
+        };
+
+        scheduler.scheduleAtFixedRate(emilTask, 5, 10, TimeUnit.SECONDS);
+
     }
 }

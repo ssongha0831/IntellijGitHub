@@ -1,5 +1,4 @@
 package JavaChall;
-
 import java.util.Scanner;
 
 public class NumberInputHandler {
