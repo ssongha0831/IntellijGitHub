@@ -1,5 +1,7 @@
+/*
+송하연
+ */
 package TestQuiz.Weekely02;
-import java.sql.Struct;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

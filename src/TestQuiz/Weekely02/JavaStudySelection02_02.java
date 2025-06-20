@@ -1,5 +1,7 @@
+/*
+송하연
+ */
 package TestQuiz.Weekely02;
-
 import java.util.*;
 import java.util.Random;
 
