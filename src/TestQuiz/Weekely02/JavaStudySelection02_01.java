@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class JavaStudySelection02_01 {
-    public static void main(String[] args) throws Exception { // 조건식 다시 수정하고 예외처리 추가하기
+    public static void main(String[] args) throws Exception {
         final int PRICE = 10000;
         final int FREE = 0;
         final int SPECIAL_PRICE = 4000;
