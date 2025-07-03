@@ -1,0 +1,98 @@
+package AlgorithmChall.Day05;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
+/*
+class Edge implements Comparable<Edge> {
+    int u, v, w;
+
+    public Edge(int u, int v, int w) {
+        this.u = u;
+        this.v = v;
+        this.w = w;
+    }
+
+    @Override
+    public int compareTo(Edge o) {
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "u=" + u +
+                ", v=" + v +
+                ", w=" + w +
+                '}';
+    }
+}
+
+public class Main04 {
+    static int N, M;
+    static List<Integer> set;
+    static List<Edge> edges;
+    static List<Edge> resultEdges;
+    static int result = 0;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+
+        edges = new ArrayList<>();
+        resultEdges = new ArrayList<>();
+
+        for (int m = 0; m < M; m++) {
+            st = new StringTokenizer(br.readLine());
+            int tu = Integer.parseInt(st.nextToken());
+            int tv = Integer.parseInt(st.nextToken());
+            int tw = Integer.parseInt(st.nextToken());
+            edges.add(new Edge(tu, tv, tw));
+        }
+
+        set = new ArrayList<>(Collections.nCopies(N + 1, 0));
+        for (int i = 0; i <= N; i++) {
+            set.set(i, i);
+        }
+
+        Collections.sort(edges);
+
+        for (Edge e : edges) {
+            if (resultEdges.size() == N - 2) {
+                break;
+            }
+            if (findSet(e.u) != findSet(e.v)) {
+                resultEdges.add(e);
+                unionSet(e.u, e.v);
+            }
+        }
+
+        for (Edge e : resultEdges) {
+            result += e.w;
+        }
+
+        System.out.println(result);
+    }
+
+    static int findSet(int a) {
+        if (set.get(a) != a) {
+            set.set(a, findSet(set.get(a)));
+        }
+        return set.get(a);
+    }
+
+    static void unionSet(int a, int b) {
+        a = findSet(a);
+        b = findSet(b);
+        set.set(b, a);
+    }
+}
+
+ */
